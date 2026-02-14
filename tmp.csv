@@ -1,0 +1,57 @@
+,DATE,Source Image,AI Segmentation,Quality of Precontour,No of Images,Total Time in Min,Status,Dr QA ,Submitted,Reviewer  Comment,  Comment,  Comment After Revison,__sheet__,Case ID,Time after Updated Instructions.,Reviewer  Comment After Feedback Correction,No. of Slices,"Time
+(in mins)",MD QA  Time,"Revised Time
+Only for Nodes",MD Notes,Feedback,Feedback after Revision,Pre-contour,Pre-contour Notes
+0,,,,,,,,,,,,,Jan2026,,,,,,,,,,,,
+1,12/29/25,nodes_100_410107_CAP1p5SoftTissue.nii,nodes_100_410107_CAP1p5SoftTissue.nii,Moderate,566,200,Completed,Done,Yes,ok,,,Jan2026,,,,,,,,,,,,
+2,12/29/25,nodes_101_Ta91212_CAP1p5SoftTissue.nii,nodes_101_Ta91212_CAP1p5SoftTissue.nii.seg.nrrd,Moderate,499,360,Completed,Done,Yes,ok,,,Jan2026,,,,,,,,,,,,
+3,12/29/25,nodes_103_Ta91019_CAP1p5SoftTissue.nii,nodes_103_Ta91019_CAP1p5SoftTissue.nii.seg.nrrd,Moderate,460,135,Completed,Done,Yes,ok,,,Jan2026,,,,,,,,,,,,
+4,12/29/25,nodes_105_Ta90821_CAP1p5SoftTissue.nii,nodes_105_Ta90821_CAP1p5SoftTissue.nii.seg.nrrd,Mild,545,190,Completed,Done,Yes,ok,,,Jan2026,,,,,,,,,,,,
+5,12/30/25,nodes_106_Ta51125_CAP1p5Soft.nii,nodes_106_Ta51125_CAP1p5Soft.nii.seg.nrrd,Moderate,510,360,Completed,Done,Yes,ok,,,Jan2026,,,,,,,,,,,,
+6,12/30/25,nodes_107_Ta50216_CAP1p5Soft.nii,nodes_107_Ta50216_CAP1p5Soft.nii.seg.nrrd,Mild,384,210,Completed,Done,Yes,large subcarinal node missed,Revised & Submitted,,Jan2026,,,,,,,,,,,,
+7,1/2/26,nodes_109_Ta50327_CAP1p5Soft.nii,nodes_109_Ta50327_CAP1p5Soft.nii.seg.nrrd,severe,525,750,Completed,Done,Yes,rt supraclav nodes missed - minor errors i fixed them,Revised & Submitted,,Jan2026,,,,,,,,,,,,
+8,1/5/26,nodes_111_Ta70918_ABDOMEN_2p00.nii,nodes_111_Ta70918_ABDOMEN_2p00.nii,Moderate,247,300,Completed,Done,Yes,ok,,,Jan2026,,,,,,,,,,,,
+9,1/6/26,nodes_114_411218_Abdopelvis3p0Br383.nii,nodes_114_411218_Abdopelvis3p0Br383.nii.seg.nrrd,Moderate,212,360,Completed,Done,Yes,ok,,,Jan2026,,,,,,,,,,,,
+10,1/6/26,nodes_115_Ta50514_Abdomen3p0I30f3.nii,nodes_115_Ta50514_Abdomen3p0I30f3.nii.seg.nrrd,Moderate,237,260,Completed,Done,Yes,ok,,,Jan2026,,,,,,,,,,,,
+11,1/7/26,nodes_120_Ta50121_CAP1p5Soft.nii,nodes_120_Ta50121_CAP1p5Soft.nii,Moderate,510,210,Completed,Done,Yes,ok,,,Jan2026,,,,,,,,,,,,
+12,1/6/26,nodes_122_Ta51210_CAP1p5Soft.nii,nodes_122_Ta51210_CAP1p5Soft.nii.seg.nrrd,Moderate,526,400,Completed,Done,Yes,large  node next to IVC missed (maybe they thought it was IVC) - the MD needs to go through this scan thoroughly,,,Jan2026,,,,,,,,,,,,
+13,1/7/26,nodes_124_411205_CAP1p5SoftTissue.nii,nodes_124_411205_CAP1p5SoftTissue.nii,Moderate,504,300,Completed,Done,Yes,ok,,,Jan2026,,,,,,,,,,,,
+14,1/7/26,nodes_125_Ta51208_CAP1p5.nii,nodes_125_Ta51208_CAP1p5.nii.seg.nrrd,Moderate,548,360,Completed,Done,Yes,ok,,,Jan2026,,,,,,,,,,,,
+15,1/8/26,nodes_126_Ta60107_CAP1p5Soft.nii,nodes_126_Ta60107_CAP1p5Soft.nii.seg.nrrd,Moderate,529,330,Completed,Done,Yes,ok,,,Jan2026,,,,,,,,,,,,
+16,1/12/26,nodes_129_Ta60702_AbdoPelvis1p5.nii,nodes_129_Ta60702_AbdoPelvis1p5.nii.gz-clean.seg.nrrd,severe,442,280,Completed,Done,Yes,ok,,,Jan2026,,,,,,,,,,,,
+17,1/13/26,nodes_135_Ta60406_CAP1p5Soft.nii,nodes_135_Ta60406_CAP1p5Soft.nii.seg.nrrd,Moderate,552,420,Completed,Done,Yes,ok,,,Jan2026,,,,,,,,,,,,
+18,1/14/26,nodes_n2_410505_CAP1p5SoftTissue.nii,nodes_n2_410505_CAP1p5SoftTissue.nii,severe,553,390,Completed,Done,Yes,ok,,,Jan2026,,,,,,,,,,,,
+19,1/19/26,nodes_104_Ta90628_CAP1p5SoftTissue,nodes_104_Ta90628_CAP1p5SoftTissue.nii.seg.nrrd,Moderate,544,300,Completed,Done,Yes,ok,,,Jan2026,,,,,,,,,,,,
+20,1/20/26,nodes_112_410303_CAP1p5SoftTissue,nodes_112_410303_CAP1p5SoftTissue.nii.seg.nrrd,severe,566,410,Completed,Done,Yes,"bilateral scalene muscles were indiscrimnately included - other nodes have large errors (e.g., left axilla)",,,Jan2026,,,,,,,,,,,,
+21,1/19/26,nodes_113_411114_CAP1p5SoftTissue,nodes_113_411114_CAP1p5SoftTissue.nii,Moderate,504,230,Completed,Done,Yes,,,,Jan2026,,,,,,,,,,,,
+22,,,,,,,,,,,,,Nodes_Nov2025,,,,,,,,,,,,
+23,,nodes_25_20201216_CAP1p5SoftTissue.nii,,,551,,Completed,Done,Yes,ok,,,Nodes_Nov2025,nodes_25_20201216_CAP1p5SoftTissue_clean.nii.seg,210,,,,,,,,,,
+24,,nodes_40_20221205_CAP1p5SoftTissue.nii,,,504,,Completed,Done,Yes,"some nodes are missed, they are mixed up with IVC, e.g., slice 185. They have to be drawn with some guesswork about their boundary - OK NOW",Revised & Submitted,,Nodes_Nov2025,nodes_40_20221205_CAP1p5SoftTissue.nii.seg,480,,,,,,,,,,
+25,,nodes_43_20220805_CAP1p5SoftTissue.nii,,,506,,Completed,Done,Yes,ok,,,Nodes_Nov2025,nodes_43_20230210_CAPNCAPPV1p5Br403.nii.seg,320,,,,,,,,,,
+26,,nodes_46_20220609_CAP1p5SoftTissue.nii,,,536,,Completed,Done,Yes,ok,,,Nodes_Nov2025,nodes_46_20220609_CAP1p5SoftTissue,300,,,,,,,,,,
+27,,nodes_47_20220601_CAP1p5SoftTissue.nii,,,516,,Completed,Done,Yes,ok,,,Nodes_Nov2025,nodes_47_20220601_CAP1p5SoftTissue,280,,,,,,,,,,
+28,,nodes_73_410705_CAP1p5Br383.nii,,,1030,,Completed,Done,Yes,ok,,,Nodes_Nov2025,nodes_73_410705_CAP1p5Br383,460,,,,,,,,,,
+29,,nodes_78_20210617_CAP1p5.nii,,,527,,Completed,Done,Yes,ok,,,Nodes_Nov2025,nodes_78_410617_CAP1p5.nii.gz-clean.seg,310,,,,,,,,,,
+30,,nodes_81_20210507_CAP1p5SoftTissue.nii,,,534,,Completed,Done,Yes,ok,,,Nodes_Nov2025,nodes_81_410507_CAP1p5SoftTissue.nii.seg,320,,,,,,,,,,
+31,,nodes_82_20210427_CAP1p5SoftTissue.nii,,,567,,Completed,Done,Yes,ok,,,Nodes_Nov2025,nodes_82_410427_CAP1p5SoftTissue.nii.seg,210,,,,,,,,,,
+32,,nodes_83_20210427_CAP1p5SoftTissue.nii,,,584,,Completed,Done,Yes,ok,,,Nodes_Nov2025,nodes_83_410427_CAP1p5SoftTissue.nii.seg,200,,,,,,,,,,
+33,,nodes_84_20211129_CAP1p5SoftTissue.nii,,,519,,Completed,Done,Yes,ok,,,Nodes_Nov2025,nodes_84_411129_CAP1p5SoftTissue.nii.seg,420,,,,,,,,,,
+34,,nodes_85_20230321_CAP1p5SoftTissue.nii,,,565,,Completed,Done,Yes,large nodes involving bilateral sternomastoids are missed,Revised & Submitted,,Nodes_Nov2025,nodes_85_41T30321_CAP1p5SoftTissue.nii.seg,260,,,,,,,,,,
+35,,nodes_86_410305_CAP1p5SoftTissue.nii,,,549,,Completed,Done,Yes,subcarinal node missed,Revised & Submitted,,Nodes_Nov2025,nodes_86_410305_CAP1p5SoftTissue,200,,,,,,,,,,
+36,,nodes_88_20210114_CAPat70s1p5.nii,,,637,,Completed,Done,Yes,missed: bilateral inguinal nodes (lowest slices),Revised & Submitted,,Nodes_Nov2025,nodes_88_410114_CAPat70s1p5.nii.gz-clean.nii.seg,220,,,,,,,,,,
+37,,nodes_89_20190421_Abdomen3p0I30f3.nii,,,229,,Completed,Done,Yes,ok,,,Nodes_Nov2025,nodes_89_Ta90421_Abdomen3p0I30f3.nii.seg,240,,,,,,,,,,
+38,,nodes_90_20201201_CAP1p5SoftTissue.nii,,,536,,Completed,Done,Yes,ok,,,Nodes_Nov2025,nodes_90_411Ta_CAP1p5SoftTissue.nii.seg,240,,,,,,,,,,
+39,,Not available,,,,,,,,,,,Nodes_Nov2025,nodes_97_410529_CAP1p5SoftTissue.nii.seg,,,,,,,,,,,
+40,,Not available,,,,,,,,,,,Nodes_Nov2025,nodes_99_Ta91122_CAP1p5mm.nii.seg,,,,,,,,,,,
+41,,nodes_13_20230322_NCAPC.nii,,,,,Completed,,,,,,Docsmart_Trial,,,,1004,1080,30,1080,,,Well segmented.,nodes_14_20230321_CAP1p5SoftTissue.nii,"Most of the AI-generated pre-contours are inaccurate or mismatched. ( muscle, Bones,organs & outer structure)"
+42,,nodes_14_20210312_CAP1p5SoftTissue.nii,,,,,Completed,,,,,,Docsmart_Trial,,,,575,420,30,420,,,Well segmented.,nodes_17_20181101_Abdomen3p0I30f3.nii,With out pre contour
+43,,nodes_15_20181023_LargeAbdo3p0eFoV.nii,,,,,Completed,,,,,,Docsmart_Trial,,,,246,40,15,40,,,Well segmented. Removed a few segmentations of vessels. ,nodes_17_20181101_Thorax1p0I31f3.nii,Contour its ok minimal correction need missing lesion and extra annotation
+44,,nodes_16_20221027_CAP1p5SoftTissue.nii,,,,,Completed,,,,,,Docsmart_Trial,,,,555,390,40,390,congolomorate lymphnodes with poor delination from suroundding structures,,Well segmented. ,nodes_19_20190325_Abdomen3p0I30f3.nii,Contour its ok minimal correction need missing lesion and extra annotation
+45,,nodes_17_20181101_Abdomen3p0I30f3.nii,,,,,Completed,,,,,,Docsmart_Trial,,,,211,420,30,60,"Diffuse sclerotic changes with few lytic areas noted in multiple bones, ",,Well segmented. ,nodes_19_20190325_Thorax1p0I31f3.nii,Contour its ok minimal correction need missing lesion and extra annotation
+46,,nodes_17_20181101_Thorax1p0I31f3.nii,,,,,Completed,,,,,,Docsmart_Trial,,,,660,1440,30,360,"Diffuse sclerotic changes with few lytic areas noted in multiple bones, Ill defined para aortic inflammatory soft tissue thickening noted and it is  labeled as conglomerate nodes.",,Well segmented. ,nodes_21_20210202_Abdomen0p75I30f3.nii,Most of the AI-generated pre-contours are inaccurate or mismatched.
+47,,nodes_18_20181115_Abdomen3p0I30f3.nii,,,,,Completed,,,,,,Docsmart_Trial,,,,234,480,20,480,,,Well segmented. ,nodes_21_20210202_Thorax0p75I70f3.nii,Contour its ok minimal correction need missing lesion and extra annotation
+48,,nodes_19_20190325_Abdomen3p0I30f3.nii,,,,,Completed,,,,,,Docsmart_Trial,,,,187,240,10,240,,,Well segmented. ,,With out pre contour
+49,,nodes_19_20190325_Thorax1p0I31f3.nii,,,,,Completed,,,,,,Docsmart_Trial,,,,588,360,20,360,,,Well segmented. ,nodes_16_20221027_CAP1p5SoftTissue.nii,Contour its ok minimal correction
+50,,nodes_20_20190926_CAP1p5.nii,,,,,Completed,,,,,,Docsmart_Trial,,,,518,260,30,120,,,Well segmented. Removed pulmonary nodules.  ,nodes_18_20181115_Abdomen3p0I30f3.nii,Contour its ok minimal correction need missing lesion and extra annotation
+51,,nodes_21_20210202_Abdomen0p75I30f3.nii,,,,,Completed,,,,,,Docsmart_Trial,,,,630,480,25,120,Mesentric and left adenxal lesion labeled,esophageal cancer was segmented. lung lesions were randomly segmented. not requested. ovarian tumour also segmented,Well segmented. Removed pulmonary nodules.,nodes_20_20190926_CAP1p5.nii,Most of the AI-generated pre-contours are inaccurate or mismatched.
+52,,nodes_21_20210202_Thorax0p75I70f3.nii,,,,,Completed,,,,,,Docsmart_Trial,,,,344,300,25,90,Suspicious lesion noted in the oesophagus difficult to label properly due to inadequate window,,Well segmented. Removed pulmonary nodules. ,nodes_110_20190508_CAP1p5.nii,
+53,,nodes_110_20190508_CAP1p5.nii,,,,,Completed,,,,,,Docsmart_Trial,,,,492,420,30,360,,Liver lesions wrre unnecessarily segmented as well. We had not requested that.  ,Well segmented. Removed Pulmonary nodules. ,nodes_13_20230322_NCAPC.nii,Most of the AI-generated pre-contours are inaccurate or mismatched.

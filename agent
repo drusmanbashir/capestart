@@ -1,0 +1,91 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CONF_FILE="$ROOT_DIR/.agent.conf"
+
+ensure_conf() {
+  if [[ ! -f "$CONF_FILE" ]]; then
+    cat > "$CONF_FILE" <<'EOC'
+# Local agent configuration (do not commit)
+DATASETS_ROOT=/s/insync/datasets
+EOC
+  fi
+}
+
+load_conf() {
+  ensure_conf
+  # shellcheck disable=SC1090
+  source "$CONF_FILE"
+  : "${DATASETS_ROOT:?DATASETS_ROOT must be set in $CONF_FILE}"
+}
+
+show_help() {
+  cat <<'EOH'
+AGENT shell UI
+
+Usage:
+  ./agent help
+  ./agent init-sbh <folder_name> [count]
+
+Commands:
+  help
+      Show available commands.
+
+  init-sbh <folder_name> [count]
+      Create SBH dataset folder and numeric subfolders 1..count
+      inside DATASETS_ROOT from .agent.conf.
+      Example:
+        ./agent init-sbh my_sbh_data 100
+EOH
+}
+
+cmd_init_sbh() {
+  local folder_name="${1:-}"
+  local count="${2:-100}"
+
+  if [[ -z "$folder_name" ]]; then
+    echo "Error: folder_name is required."
+    echo "Usage: ./agent init-sbh <folder_name> [count]"
+    exit 1
+  fi
+
+  if ! [[ "$count" =~ ^[0-9]+$ ]] || [[ "$count" -lt 1 ]]; then
+    echo "Error: count must be a positive integer. Got: $count"
+    exit 1
+  fi
+
+  load_conf
+
+  local target_dir="$DATASETS_ROOT/$folder_name"
+  mkdir -p "$target_dir"
+
+  local i
+  for i in $(seq 1 "$count"); do
+    mkdir -p "$target_dir/$i"
+  done
+
+  echo "Initialized SBH folder: $target_dir"
+  echo "Created subfolders: 1..$count"
+}
+
+main() {
+  local cmd="${1:-help}"
+
+  case "$cmd" in
+    help|-h|--help)
+      show_help
+      ;;
+    init-sbh)
+      shift
+      cmd_init_sbh "$@"
+      ;;
+    *)
+      echo "Unknown command: $cmd"
+      show_help
+      exit 1
+      ;;
+  esac
+}
+
+main "$@"
