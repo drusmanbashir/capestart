@@ -51,3 +51,9 @@ Default value:
 ```bash
 DATASETS_ROOT=/s/insync/datasets
 ```
+
+For spreadsheet download tooling, keep sheet links in local config/env only:
+
+```bash
+SPREADSHEET_URL=https://docs.google.com/spreadsheets/d/<id>/edit
+```
