@@ -1,0 +1,3 @@
+# Local agent config (contains machine-specific paths)
+.agent.conf
+local_paths.yaml
