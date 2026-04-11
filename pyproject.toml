@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "capestart"
+version = "0.0.0"
+description = "Capestart utilities"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[tool.setuptools]
+py-modules = ["capestart_filters", "capestart_related", "spreadsheet_download"]

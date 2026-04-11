@@ -11,7 +11,7 @@ from pathlib import Path
 import pandas as pd
 import SimpleITK as sitk
 import torch
-from utilz.string import dec_to_str, info_from_filename
+from utilz.stringz import dec_to_str, info_from_filename
 
 # AFTER CLEANING UP PREDS, THIS FUNCTION FINDS MATCHING IMAGES AND COPIES THEM
 def matching_images_for_preds(preds_fldr, images_fldr, dest_imgs_fldr):

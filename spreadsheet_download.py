@@ -3,7 +3,7 @@ import os
 
 import gspread
 import pandas as pd
-from utilz.string import info_from_filename
+from utilz.stringz import info_from_filename
 
 CONF_FILE = Path(__file__).resolve().parent / ".agent.conf"
 REQUIRED_URL_KEY = "SPREADSHEET_URL"

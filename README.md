@@ -1,1 +1,53 @@
-# capestart
+# capestart utilities
+
+This repository contains small utilities for CAPESTART dataset setup and local data processing.
+
+## Utilities
+
+### `./agent`
+Shell command utility for SBH folder setup.
+
+- `./agent help`
+  Show command help.
+- `./agent init-sbh <folder_name> [count]`
+  Create `DATASETS_ROOT/<folder_name>` and numeric subfolders `1..count` (default `100`).
+
+Config is loaded from local `.agent.conf` (created automatically if missing).
+
+### `./agent-cli`
+Interactive menu wrapper around `./agent`.
+
+- Option 1: Show `agent` help
+- Option 2: Run `init-sbh` by prompts
+- Option 3: Exit
+
+### `spreadsheet_download.py`
+Reads one or more worksheets from a Google Spreadsheet and merges them into a single DataFrame.
+
+- Spreadsheet URL is resolved from:
+  1. env var `SPREADSHEET_URL`, then
+  2. `.agent.conf` key `SPREADSHEET_URL`
+- Uses `gspread` OAuth with read-only Sheets scope.
+- Extracts case IDs from the `Source Image` column.
+- Running as script writes merged output to `tmp.csv`.
+
+### `capestart_related.py`
+Project-specific image processing script for NIfTI workflows (normalization, collation/renaming, and output writing) using MONAI/SimpleITK and local paths.
+
+This is currently a task script (hard-coded paths, no CLI arguments).
+
+### `capestart_filters.py`
+Project-specific helper script for filtering/copying CAPESTART-related images and predictions and organizing pending image folders.
+
+This is currently a task script (hard-coded paths, no CLI arguments).
+
+## Local configuration
+
+Use `.agent.conf` for local machine settings. Keep local paths and spreadsheet links out of version control.
+
+Example:
+
+```bash
+DATASETS_ROOT=/s/insync/datasets
+SPREADSHEET_URL=https://docs.google.com/spreadsheets/d/<id>/edit
+```
