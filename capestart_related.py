@@ -8,15 +8,15 @@ import SimpleITK as sitk
 from fran.transforms.imageio import LoadSITKd
 from fran.transforms.intensitytransforms import IntensityNorm
 from fran.transforms.totensor import ToTensorT
-from monai.data.dataset import Dataset
-from monai.transforms.compose import Compose
-from monai.transforms.intensity.dictionary import NormalizeIntensityd
-from monai.transforms.io.dictionary import SaveImaged
+from det3d.monai.data.dataset import Dataset
+from det3d.det3d.monai.transforms.compose import Compose
+from det3d.det3d.monai.transforms.intensity.dictionary import NormalizeIntensityd
+from det3d.det3d.monai.transforms.io.dictionary import SaveImaged
 from torch.utils.data.dataloader import DataLoader
 from utilz.helpers import find_matching_fn
 from utilz.stringz import info_from_filename
 
-from label_analysis.utils import align_sitk_imgs
+from label_analysis.utils.utils import align_sitk_imgs
 
 tr = ipdb.set_trace
 import shutil
