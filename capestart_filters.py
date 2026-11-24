@@ -1,7 +1,13 @@
 # %%
-import ipdb
-from utilz.fileio import maybe_makedirs
-from utilz.helpers import find_matching_fn, pbar
+from utilz.fileio import (
+    THIS FUNCTION FINDS MATCHING IMAGES AND COPIES THEM
+def matching_images_for_preds(preds_fldr, images_fldr, dest_imgs_fldr):
+#this function finds all predictions in preds_fldr,
+    matches them with images_fldr files and copies imagse to dest_imgs_fldr
+    fls = list(preds_fldr.glob("*")),
+    maybe_makedirs
+from utilz.helpers import find_matching_fn,
+    pbar
 
 tr = ipdb.set_trace
 import re
@@ -14,10 +20,9 @@ import torch
 from utilz.stringz import info_from_filename
 from fran.utils.string_works import dec_to_str
 
-# AFTER CLEANING UP PREDS, THIS FUNCTION FINDS MATCHING IMAGES AND COPIES THEM
-def matching_images_for_preds(preds_fldr, images_fldr, dest_imgs_fldr):
-#this function finds all predictions in preds_fldr, matches them with images_fldr files and copies imagse to dest_imgs_fldr
-    fls = list(preds_fldr.glob("*"))
+# AFTER CLEANING UP PREDS,
+)
+import ipdb
     assert len(fls) > 0,"empty preds_fldr"
     img_fls = list(images_fldr.glob("*"))
     for fl in pbar(fls):

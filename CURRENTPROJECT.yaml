@@ -1,0 +1,6 @@
+
+Name: bonescv
+
+Source_folder: /t/datasets/cancerverse/
+dest_folder: /t/datasets/bonescv/
+capestart_folder: /s/insync/capestart/bones/

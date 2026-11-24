@@ -1,0 +1,2 @@
+- Save nii.gz format
+- When loading a segmap for my review - ONLY load the outline - turn off fill so i can see inside it. Use a color palette that gives diff labels distinct appearances, e.g., DONT give two shades of same colour if you can avoid it.
