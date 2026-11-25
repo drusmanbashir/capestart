@@ -136,4 +136,5 @@ At end of session, check all files and folders shared with capestart are account
 
 # File Format
 nrrd is expensive. When YOU create a new file, always use nii.gz format
+Exception: a segmentation generated in Slicer (e.g. nnInteractive) may be kept as `.seg.nrrd`.
 
