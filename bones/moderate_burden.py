@@ -234,8 +234,8 @@ def main(args):
     candidate = ~is_annotated & ~is_heavy & (passes | curated)
     rows["path"] = conf["CT_ROOT"] + "/" + rows.case_id + "/ct.nii.gz"
     involved = group.isin(group[candidate | is_annotated | is_heavy])
-    unavailable = pd.Series(False, index=rows.index)
-    unavailable[involved] = rows.path[involved].map(ct_unavailable)
+    unavailable = pd.Series(np.zeros(len(rows), dtype=bool), index=rows.index)
+    unavailable[involved] = np.array([ct_unavailable(p) for p in rows.path[involved]], dtype=bool)
     if unavailable.any():
         print(f"no usable CT, left out of every sheet: {sorted(rows.case_id[unavailable])}")
     candidate &= ~unavailable

@@ -86,7 +86,7 @@ Capestart annotate the cases in `OF/images/` and update the sheet in OF. I revie
 - Capestart revise the case, and it comes back for another review.
 
 ### Accept
-Go to step 4, but only after I have confirmed acceptance.
+Acceptance applies to a segmentation map, never to bounding boxes alone: a case with only Capestart boxes is not accepted, however good the boxes. Go to step 4, but only after I have confirmed acceptance of its segmentation map.
 
 ## 4. Moving accepted cases out
 - Move the case out of `OF/images/` into the dataset folder DS (e.g. `/t/datasets/bonescv/`). `OF/images/` then holds only active cases: ones to annotate or under review.
