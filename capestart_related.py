@@ -5,9 +5,8 @@ from pathlib import Path
 
 import ipdb
 import SimpleITK as sitk
-from fran.transforms.imageio import LoadSITKd
+from fran.transforms.imageio import LoadSITKd, ToTensorT
 from fran.transforms.intensitytransforms import IntensityNorm
-from fran.transforms.totensor import ToTensorT
 from monai.data.dataset import Dataset
 from monai.transforms.compose import Compose
 from monai.transforms.intensity.dictionary import NormalizeIntensityd
